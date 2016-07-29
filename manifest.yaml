@@ -1,0 +1,8 @@
+---
+applications:
+- name: flask-by-example
+  memory: 256M
+  disk_quota: 1GB
+  services:
+    - mypostgres
+    - myredis

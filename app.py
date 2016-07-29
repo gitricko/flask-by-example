@@ -104,4 +104,5 @@ def get_results(job_key):
 
 
 if __name__ == '__main__':
-    app.run()
+    port = int(os.getenv("PORT", 9099))
+    app.run(host='0.0.0.0', port=port, debug=True)
